@@ -1,13 +1,29 @@
+<!DOCTYPE html>
+<html>
 {% extends 'base.html' %}
-
-{% block title %}Menu{% endblock %}
-
+{% load static %}
 {% block content %}
-<h2>Menu :) </h2>
+<head>
+    <title>Manu</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
 
-{% for Booking in Booking %}
-<p>Name: {{booking.name}}</p>
-<p>Price: {{booking.price}}</p>
+<body>
+<h1 class="h1-menu">Menu</h1>
+<!--Begin col-->
+<div class="column">
+    {% for item in menu.menu %}
+    <p>
+        <p class="item-name-style"> {{ item.name }} </p>
+        <span class="menu-price">
+            ${{ item.price }}.00
+        </span>
+    </p>
+    <br>
 
-{% endfor %}
+    {% endfor %}
+</div>
+<!--End col-->
 {% endblock %}
+</body>
+</html>

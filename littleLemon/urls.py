@@ -17,13 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include 
 
-from lit_lemon.views import home, about, menu, book 
+from lit_lemon.views import home, about, menu, book ,display_menu_item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', about),
     path('home/', home), 
     path('menu/', menu),
-    path('book/', book)
-
+    path('book/', book),
+    path('menu_item/<int:pk>/', display_menu_item, name="menu_item"),
 ]

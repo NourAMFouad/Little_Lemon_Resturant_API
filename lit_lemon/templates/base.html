@@ -1,17 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}My Django App{% endblock %}</title>
+    <title>{% block title %}Menu{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}"> <!-- Link to  CSS file -->
 </head>
 <body>
     <header>
         <h1>
-            {% load static %}
+           
             <img src="{% static 'littlelemon1.png' %}" alt="My Image", width = "700", height="200">
         </h1>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="/home/">Home</a></li>
                 <li><a href="/about/">About us</a></li>
                 <li><a href="/menu/">Menu</a></li>

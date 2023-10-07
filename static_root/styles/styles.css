@@ -1,0 +1,45 @@
+/* styles.css */
+.navbar {
+    background-color: rgb(236, 236, 1);
+    list-style: none;
+    padding: 10px;
+    margin: 30;
+    text-align: center;
+    font-size: 25px;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0px 40px; /* Adjust the spacing between the links as needed */
+  
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black; /* Link color */
+    font-weight: bold ;  /* Make the text bold */
+    
+}
+
+/* Add this CSS to your styles.css file */
+.text-container {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    background-image: url('littleLemon3.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+    background-size: cover; /* Resize the background image to cover the container */
+}
+
+.Copyright-style {
+    position: absolute;   /* positions the text absolutely within its containing element.*/
+   
+    bottom: 200;   
+    left: 50%;
+    transform: translate(40%, 110%);
+  
+    color: white; /* Set the text color for better visibility */
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding: 10px; /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for the text */
+}
