@@ -1,10 +1,23 @@
-# Little_Lemon_Resturant_API
-Using Django framework with python to create web application for Little Lemon resturant.
-It includes Two main pages:
-   1- menu page:
-       it contain all items with the price and when you click on the spcefice item then go to the page to show the details of it(menu item page).
-   2- menu item page:
-      Display the details of the item.
-   3- Book page:
-      It the reservation form to allow users to enter them info to book the table and save it in database.
-and add another features like header and footer of pages.
+# Little Lemon Restaurant Web Application
+
+This project utilizes the Django framework with Python to create a web application for the Little Lemon Restaurant. The application consists of two main pages and additional features like headers and footers for a seamless user experience.
+
+## Main Pages
+
+### 1. Menu Page
+- The Menu Page displays a list of all items along with their prices.
+- When you click on a specific item, you are redirected to the Menu Item Page for that item.
+
+### 2. Menu Item Page
+- The Menu Item Page provides detailed information about a specific menu item.
+
+### 3. Book Page
+- The Book Page offers a reservation form that allows users to enter their information to book a table at the restaurant.
+- The information submitted is saved in the database for reference.
+
+## Additional Features
+
+- **Header**: A consistent header is included across all pages for easy navigation and branding.
+- **Footer**: A footer section is provided for any additional information, links, or contact details.
+
+
